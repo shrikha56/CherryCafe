@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Cherry Specialty Coffee</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-coffee"></i>
+                <span>Black Cherry Specialty Coffee</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Black Cherry Specialty Coffee</h1>
+            <p class="hero-subtitle">Artisan coffee roasted to perfection, served with passion</p>
+            <div class="hero-buttons">
+                <a href="#gallery" class="btn btn-primary">Explore Our Menu</a>
+                <a href="#contact" class="btn btn-secondary">Visit Us</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="static/assets/unnamed (6)_1753765089722.webp" alt="Black Cherry Specialty Coffee takeaway cup">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Welcome to Black Cherry Specialty Coffee, where passion meets perfection in every cup. Founded with a love for exceptional coffee and community, we've been serving artisan-roasted beans and handcrafted beverages that celebrate the rich tradition of coffee culture.</p>
+                    
+                    <p>Our expert baristas carefully select premium beans from sustainable farms around the world, roasting them to bring out their unique flavor profiles. From our signature Black Cherry blend to seasonal specialties, every cup tells a story of craftsmanship and dedication.</p>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-seedling"></i>
+                            <h3>Sustainable Sourcing</h3>
+                            <p>Ethically sourced beans from partner farms worldwide</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-fire"></i>
+                            <h3>Artisan Roasting</h3>
+                            <p>Small-batch roasting for maximum flavor and freshness</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h3>Community Focus</h3>
+                            <p>A welcoming space for coffee lovers to connect and relax</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="static/assets/blackcherry1_1753764643737.webp" alt="Black Cherry Specialty Coffee interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Coffee & Atmosphere</h2>
+            <p class="section-subtitle">Discover our handcrafted beverages and cozy ambiance</p>
+            
+            <div class="gallery-categories">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="coffee">Coffee</button>
+                <button class="filter-btn" data-filter="food">Food</button>
+                <button class="filter-btn" data-filter="interior">Interior</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="coffee">
+                    <img src="static/assets/unnamed (1)_1753765101704.webp" alt="Specialty coffee drinks">
+                    <div class="gallery-overlay">
+                        <h3>Signature Blends</h3>
+                        <p>Our carefully crafted coffee selections</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="food">
+                    <img src="static/assets/unnamed (3)_1753765098771.webp" alt="Fresh pastries and food">
+                    <div class="gallery-overlay">
+                        <h3>Fresh Pastries</h3>
+                        <p>Homemade treats to complement your coffee</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="interior">
+                    <img src="static/assets/unnamed (4)_1753765096021.webp" alt="Coffee shop interior">
+                    <div class="gallery-overlay">
+                        <h3>Cozy Atmosphere</h3>
+                        <p>Perfect space for work or relaxation</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="coffee">
+                    <img src="static/assets/unnamed (7)_1753765087222.webp" alt="Coffee preparation">
+                    <div class="gallery-overlay">
+                        <h3>Expert Baristas</h3>
+                        <p>Skilled coffee preparation techniques</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="interior">
+                    <img src="static/assets/unnamed (5)_1753765092388.webp" alt="Seating area">
+                    <div class="gallery-overlay">
+                        <h3>Comfortable Seating</h3>
+                        <p>Relax and enjoy your perfect cup</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="coffee">
+                    <img src="static/assets/unnamed (6)_1753765089722.webp" alt="Takeaway coffee">
+                    <div class="gallery-overlay">
+                        <h3>Perfect for Takeaway</h3>
+                        <p>Quality coffee on the go</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="section-subtitle">Real reviews from our coffee-loving community</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <h3>Olivia Morgan</h3>
+                        <div class="rating">
+                            <span>★★★★★</span>
+                        </div>
+                        <span class="review-date">3 months ago</span>
+                    </div>
+                    <p class="testimonial-text">"Absolutely love this place! The coffee is exceptional and the atmosphere is so welcoming. The Black Cherry blend is my new favorite - perfectly balanced with rich, smooth flavors. The staff are incredibly friendly and knowledgeable about their beans."</p>
+                    <div class="testimonial-details">
+                        <div class="scores">
+                            <span>Food: 5/5</span>
+                            <span>Service: 5/5</span>
+                            <span>Atmosphere: 5/5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <h3>James Chen</h3>
+                        <div class="rating">
+                            <span>★★★★★</span>
+                        </div>
+                        <span class="review-date">2 months ago</span>
+                    </div>
+                    <p class="testimonial-text">"Just popped in for a coffee, it was soft opening so didn't try the food. The staff are very friendly and the coffee is very good. Will definitely come back."</p>
+                    <div class="testimonial-details">
+                        <div class="scores">
+                            <span>Service: 5/5</span>
+                            <span>Atmosphere: 5/5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <h3>Upamali Dharmasena</h3>
+                        <div class="rating">
+                            <span>★★★★★</span>
+                        </div>
+                        <span class="review-date">2 months ago</span>
+                    </div>
+                    <p class="testimonial-text">"Such a cute spot I discovered, newly opened, just few steps further down City Rd from Toby's Chippendale. Such a calm homely set up, unique choice of furniture and plenty of windows. A large mocha was 4.50! I have paid up to 7 for the same drink in plenty of other places."</p>
+                    <div class="testimonial-details">
+                        <span class="visit-type">Dine in | $1–20</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <h3>Rachel Chan</h3>
+                        <div class="rating">
+                            <span>★★★★★</span>
+                        </div>
+                        <span class="review-date">A month ago</span>
+                    </div>
+                    <p class="testimonial-text">"One of my fav café to go in my neighborhood. The owner and the staff is warm and welcoming. They are super friendly. My favorite order is the soy milk cap which is smooth and rich. The chicken turnover is also a must try."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Visit Us</h2>
+            <p class="section-subtitle">We'd love to serve you the perfect cup of coffee</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>58 City Rd<br>Chippendale NSW 2008<br>Australia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Monday: 7:00 AM - 4:00 PM<br>
+                               Tuesday: 7:00 AM - 4:00 PM<br>
+                               Wednesday: 7:00 AM - 4:00 PM<br>
+                               Thursday: 7:00 AM - 4:00 PM<br>
+                               Friday: 7:00 AM - 4:00 PM<br>
+                               Saturday: 7:30 AM - 3:00 PM<br>
+                               Sunday: 7:30 AM - 3:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>(555) 123-COFFEE<br>(555) 123-2633</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>hello@blackcherrycoffee.com<br>info@blackcherrycoffee.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Get in Touch</h3>
+                    <form action="https://formspree.io/f/mdkogaol" method="POST" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-coffee"></i>
+                        <span>Black Cherry Specialty Coffee</span>
+                    </div>
+                    <p>Artisan coffee roasted to perfection, served with passion in the heart of Chippendale.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 58 City Rd, Chippendale NSW 2008</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-COFFEE</p>
+                    <p><i class="fas fa-envelope"></i> hello@blackcherrycoffee.com</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Hours</h3>
+                    <p>Mon-Fri: 7:00 AM - 4:00 PM</p>
+                    <p>Sat-Sun: 7:30 AM - 3:00 PM</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Black Cherry Specialty Coffee. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="static/script.js"></script>
+</body>
+</html>

@@ -56,22 +56,14 @@ window.addEventListener('scroll', () => {
     navbar.style.background = 'rgba(0, 0, 0, 0.98)';
 });
 
-<<<<<<< HEAD
 // Contact form submission (basic validation)
-const contactForm = document.querySelector('.contact-form form');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-=======
-// Contact form submission with database integration
 const contactForm = document.querySelector('#contactForm');
 if (contactForm) {
-    contactForm.addEventListener('submit', async function(e) {
->>>>>>> 187b0f16007dc40c43cc2c27c0b1420608a57440
+    contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
         // Get form data
         const formData = new FormData(this);
-<<<<<<< HEAD
         const name = formData.get('name');
         const email = formData.get('email');
         const subject = formData.get('subject');
@@ -80,24 +72,11 @@ if (contactForm) {
         // Basic validation
         if (!name || !email || !message) {
             alert('Please fill in all required fields.');
-=======
-        const data = {
-            name: formData.get('name'),
-            email: formData.get('email'),
-            subject: formData.get('subject') || '',
-            message: formData.get('message')
-        };
-        
-        // Basic validation
-        if (!data.name || !data.email || !data.message) {
-            showMessage('Please fill in all required fields.', 'error');
->>>>>>> 187b0f16007dc40c43cc2c27c0b1420608a57440
             return;
         }
         
         // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-<<<<<<< HEAD
         if (!emailRegex.test(email)) {
             alert('Please enter a valid email address.');
             return;
@@ -105,49 +84,7 @@ if (contactForm) {
         
         // Submit the form normally (Formspree will handle it)
         this.submit();
-=======
-        if (!emailRegex.test(data.email)) {
-            showMessage('Please enter a valid email address.', 'error');
-            return;
-        }
-        
-        try {
-            // Submit to database
-            const response = await fetch('/api/contact', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(data)
-            });
-            
-            const result = await response.json();
-            
-            if (result.success) {
-                showMessage('Thank you for your message! We\'ll get back to you soon.', 'success');
-                this.reset();
-            } else {
-                showMessage('Sorry, there was an error sending your message. Please try again.', 'error');
-            }
-        } catch (error) {
-            console.error('Error:', error);
-            showMessage('Sorry, there was an error sending your message. Please try again.', 'error');
-        }
->>>>>>> 187b0f16007dc40c43cc2c27c0b1420608a57440
     });
-}
-
-// Function to show form messages
-function showMessage(message, type) {
-    const messageDiv = document.getElementById('form-message');
-    messageDiv.textContent = message;
-    messageDiv.className = `form-message ${type}`;
-    messageDiv.style.display = 'block';
-    
-    // Hide message after 5 seconds
-    setTimeout(() => {
-        messageDiv.style.display = 'none';
-    }, 5000);
 }
 
 // Intersection Observer for scroll animations
@@ -198,16 +135,6 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
-
-// Preload critical images
-const criticalImages = [
-    'https://pixabay.com/get/g3b3228653ed739c27470b08a33a67ca5fcdd1feb404c9483042a98d4359546b5bed9cc6bb926a0c36e49d1fb76422019022420eb228bbc5f8b83a03621f940a2_1280.jpg'
-];
-
-criticalImages.forEach(src => {
-    const img = new Image();
-    img.src = src;
-});
 
 // Add loading state management
 window.addEventListener('load', () => {
